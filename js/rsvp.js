@@ -16,6 +16,7 @@ $( document ).ready(function() {
           dataType: "json"
 
       }).error(function(jqXHR, status, error){
+        $('form').find('name, _replyto, rsvpDecisionMaybe, rsvpDecisionNo, address').val('')
         alert("Uh oh, something went wrong and your rsvp was not sent");
       }).success(function(data, status, jqXHR) {
           alert("Thank you for sending in your early bird rsvp!")

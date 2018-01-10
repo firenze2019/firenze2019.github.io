@@ -193,6 +193,10 @@ a:hover {
   flex-direction: row;
 }
 
+.titles {
+  margin-top: -5%;
+}
+
 /*Footer*/
 .footer-sub {
   font-size: 30px;
@@ -202,7 +206,7 @@ a:hover {
   text-align: center;
   width: 100%;
   margin-bottom: 2%;
-  margin-top: 5%;
+  margin-top: 0%;
 }
 
 .line {
