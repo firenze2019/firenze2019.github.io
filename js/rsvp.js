@@ -7,9 +7,11 @@ $( document ).ready(function() {
               url: "http://formspree.io/tbmbknupfer@gmail.com",
               method: "POST",
               data: {
+                  name: $('#js-name').val()
                   email: $('#js-email').val(),
                   address: $('#js-address').val()
-                  rsvpDecision: $('#js-rsvp').val()
+                  maybeRSVP: $('#js-maybeRSVP').val()
+                  noRSVP: $('#js-noRSVP').val()
               },
               dataType: "json"
           }).error(function(jqXHR, status, error){

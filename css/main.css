@@ -217,9 +217,9 @@ a:hover {
    border: 2px solid #7daee9;
    color: #7daee9;
    display: inline-block; /* To wrap the border just around the content */
-   font-size: 20px;
+   font-size: 25px;
    margin-top: 12px;
-   padding: 12px 30px;
+   padding: 10px 25px;
    background-color: transparent;
  }
 
@@ -232,46 +232,33 @@ a:hover {
  /*RSVP*/
  .input-field {
   width: 80%;
-  max-width: 700px;
+  max-width: 300px;
+  margin: 1%;
+  line-height: 1em;
+  padding: 6px;
+  font-size: 1.1em;
+  border-radius: 3px;
+  border: none;
+  margin-top: 10%;
+  font-family: 'Shadows Into Light', cursive;
+  float: left;
+}
+
+.address-field{
+  width: 80%;
+  max-width: 300px;
   margin: 1%;
   line-height: 2em;
   padding: 6px;
-  font-size: 1em;
+  font-size: 1.1em;
   border-radius: 3px;
   border: none;
+  margin-top: 1%;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .submitButton {
     font-family: 'Shadows Into Light', cursive;
-}
-
-input[type=radio] + label {
-/*  display: block;
-  font-size: 1em;
-  margin-top: 1.33em;
-  margin-bottom: 1.33em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-
-  color: #019cdb;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center
-  */
-}
-
-input[type="radio"]{
-  margin: 0 10px 0 10px;
-}
-
-input[type="radio"]:not(:checked) {
-  color: blue;
-}
-
-input[type=radio]:checked {
-  color: red;
-  /*color: #48b2e8;*/
 }
 
 /* Customize the label (the container) */
@@ -313,12 +300,12 @@ input[type=radio]:checked {
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #7daee9;
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #7daee9;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -335,10 +322,10 @@ input[type=radio]:checked {
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
-  top: 4.5px;
-  left: 4.5px;
-  width: 6px;
-  height: 6px;
+  top: 5.1px;
+  left: 5.1px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: white;
   /*

@@ -28,40 +28,31 @@
        <h4 class="title">For the early bird party count</h4>
        <form class="flex column" action="https://formspree.io/tbmbknupfer@gmail.com"
       method="POST" dataType="json">
-         <input type="email" id="js-email" class="input-field" placeholder="Your Email" required name="_replyto"/>
-         <div>
+
+          <div class="flex">
+            <input type="text" id="js-name" class="input-field" placeholder="Name(s) Invited" required name="name"/>
+            <input type="email" id="js-email" class="input-field" placeholder="Your Email" required name="_replyto"/>
+          </div>
            <!-- Custom radio-->
+        <div>
            <label class="container">Most Likely Will Attend
-            <input id="js-rsvp" type="radio" name="rsvpDecision">
+            <input id="js-maybeRSVP" type="radio" name="rsvpDecision">
             <span class="checkmark"></span>
           </label>
 
           <label class="container">Regrettably, Cannot Attend
-            <input id="js-rsvp" type="radio" name="rsvpDecision">
+            <input id="js-noRSVP" type="radio" name="rsvpDecision">
             <span class="checkmark"></span>
           </label>
-
-           <!--just label
-           <input id="js-rsvp" type="radio" name="rsvpDecision"/>
-           <label for="rsvpDecision">Most Likely Will Attend</label>
-
-           <input id="js-rsvp" type="radio" name="rsvpDecision"/>
-           <label for="rsvpDecision">Regrettably, Cannot Attend</label>
-         -->
-            <!--h4 Title
-           <input id="js-rsvp" type="radio" name="rsvpDecision"/>
-           <label for="rsvpDecision"><h4 class="title">Most Likely Will Attend</h4></label>
-
-           <input id="js-rsvp" type="radio" name="rsvpDecision" class="rsvpNotAttend"/>
-           <label for="rsvpDecision"><h4 class="title">Regrettably, Cannot Attend</h4></label>
-           -->
         </div>
-         <textarea id="js-address" class="input-field" rows="10" cols="20" placeholder="Please enter your mailing address" required></textarea>
+          <!-- <input type="text" id="js-address" rows="5" cols="10" class="address-field" placeholder="Mailing Address" required name="address"/> -->
+         <textarea  class="address-field" rows="3" cols="10" placeholder="Please enter your mailing address" required></textarea>
         <!--Formspree-->
          <input type="hidden" name="_subject" value="RSVP from TBM Wedding" />
          <input type="text" name="_gotcha" style="display:none" />
 
          <button type="submit" value="Send" class="button submitButton">Submit</button>
+
        </form>
    </section>
 
