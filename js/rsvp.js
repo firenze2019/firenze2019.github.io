@@ -7,7 +7,10 @@ $( document ).ready(function() {
           url: "https://formspree.io/tbmbknupfer@gmail.com",
           method: "POST",
           data: {
+            name: $('#js-name').val(),
             email: $('#js-email').val(),
+            rsvpDecisionMaybe: $('#js-maybeRSVP').val(),
+            rsvpDecisionNo: $('#js-noRSVP').val(),
             address: $('#js-address').val()
           },
           dataType: "json"
@@ -17,7 +20,7 @@ $( document ).ready(function() {
       }).success(function(data, status, jqXHR) {
           alert("Thank you for sending in your early bird rsvp!")
           /*Empty form values so it's obvious to user rsvp was sent*/
-          $('form').find('#js-email, #js-address').val('');
+          $('form').find('#js-name, #js-email, #js-maybeRSVP, #js-noRSVP, #js-address').val('');
       });
    });
 /*
