@@ -25,13 +25,36 @@
     <!--RSVP Form-->
     <section>
        <h2 class="sub title">rsvp</h2>
-       <h4 class="title">To Pry out those who already know they can't come</h4>
+       <h4 class="title">For the early bird party count</h4>
        <form class="flex column" action="https://formspree.io/tbmbknupfer@gmail.com"
       method="POST" dataType="json">
          <input type="email" id="js-email" class="input-field" placeholder="Your Email" required name="_replyto"/>
-         <div class="row">
-           <input id="js-rsvp" type="radio" name="rsvpDecision">Most Likely Will Attend</input>
-           <input id="js-rsvp" type="radio" name="rsvpDecision">Regrettably, Cannot Attend</input>
+         <div>
+           <!-- Custom radio-->
+           <label class="container">Most Likely Will Attend
+            <input id="js-rsvp" type="radio" name="rsvpDecision">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container">Regrettably, Cannot Attend
+            <input id="js-rsvp" type="radio" name="rsvpDecision">
+            <span class="checkmark"></span>
+          </label>
+
+           <!--just label
+           <input id="js-rsvp" type="radio" name="rsvpDecision"/>
+           <label for="rsvpDecision">Most Likely Will Attend</label>
+
+           <input id="js-rsvp" type="radio" name="rsvpDecision"/>
+           <label for="rsvpDecision">Regrettably, Cannot Attend</label>
+         -->
+            <!--h4 Title
+           <input id="js-rsvp" type="radio" name="rsvpDecision"/>
+           <label for="rsvpDecision"><h4 class="title">Most Likely Will Attend</h4></label>
+
+           <input id="js-rsvp" type="radio" name="rsvpDecision" class="rsvpNotAttend"/>
+           <label for="rsvpDecision"><h4 class="title">Regrettably, Cannot Attend</h4></label>
+           -->
         </div>
          <textarea id="js-address" class="input-field" rows="10" cols="20" placeholder="Please enter your mailing address" required></textarea>
         <!--Formspree-->

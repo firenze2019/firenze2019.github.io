@@ -29,6 +29,7 @@ body {
 
 .nav-item {
   font-size: 20px;
+  font-weight: bold;
   list-style: none;
   display: inline;
   margin-right: 12px;
@@ -242,4 +243,105 @@ a:hover {
 
 .submitButton {
     font-family: 'Shadows Into Light', cursive;
+}
+
+input[type=radio] + label {
+/*  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+
+  color: #019cdb;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center
+  */
+}
+
+input[type="radio"]{
+  margin: 0 10px 0 10px;
+}
+
+input[type="radio"]:not(:checked) {
+  color: blue;
+}
+
+input[type=radio]:checked {
+  color: red;
+  /*color: #48b2e8;*/
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  color: #7daee9;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 10;
+  left: 10;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 4.5px;
+  left: 4.5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+  /*
+  background: #f2cdc4;
+  */
 }
