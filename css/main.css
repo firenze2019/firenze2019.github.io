@@ -246,6 +246,7 @@ a:hover {
 
 .address-field{
   width: 80%;
+  height: 15%;
   max-width: 300px;
   margin: 1%;
   line-height: 2em;

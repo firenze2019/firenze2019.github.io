@@ -7,6 +7,9 @@
      });
 
      gallery.on('jg.complete', function() {
-        $('.swipeboxImg').swipebox()
+        $('.swipeboxImg').swipebox({
+          hideBarsDelay : 3000,
+          loopAtEnd: true,
+        })
     });
  });
