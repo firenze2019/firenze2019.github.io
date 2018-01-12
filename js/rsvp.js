@@ -9,19 +9,19 @@ $( document ).ready(function() {
           data: {
             name: $('#js-name').val(),
             email: $('#js-email').val(),
-            rsvpDecisionMaybe: $('#js-maybeRSVP').val().checked,
-            rsvpDecisionNo: $('#js-noRSVP').val().checked,
+            rsvpDecisionMaybe: $('#js-maybeRSVP').checked.val(),
+            rsvpDecisionNo: $('#js-noRSVP').checked.val(),
             address: $('#js-address').val()
           },
           dataType: "json"
 
       }).error(function(jqXHR, status, error){
-        $('form').find('name, _replyto, rsvpDecisionMaybe, rsvpDecisionNo, address').val('')
         alert("Uh oh, something went wrong and your rsvp was not sent");
       }).success(function(data, status, jqXHR) {
           alert("Thank you for sending in your early bird rsvp!")
           /*Empty form values so it's obvious to user rsvp was sent*/
-          $('form').find('#js-name, #js-email, #js-maybeRSVP, #js-noRSVP, #js-address').val('');
+          $('form').find('#js-name, #js-email, #js-address').val('')
+          $('input[type="checkbox"]').prop('checked', false); // Uncheck checkbox
       });
    });
 /*
