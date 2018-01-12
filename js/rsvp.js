@@ -9,8 +9,8 @@ $( document ).ready(function() {
           data: {
             name: $('#js-name').val(),
             email: $('#js-email').val(),
-            rsvpDecisionMaybe: $('#js-maybeRSVP').checked.val(),
-            rsvpDecisionNo: $('#js-noRSVP').checked.val(),
+            rsvpDecisionMaybe: $('#js-maybeRSVP:checked').val(),
+            rsvpDecisionNo: $('#js-noRSVP:checked').val(),
             address: $('#js-address').val()
           },
           dataType: "json"
