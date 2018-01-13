@@ -18,10 +18,11 @@ $( document ).ready(function() {
       }).error(function(jqXHR, status, error){
         alert("Uh oh, something went wrong and your rsvp was not sent");
       }).success(function(data, status, jqXHR) {
-          alert("Thank you for sending in your early bird rsvp!")
+          alert("Thank you for replying!")
           /*Empty form values so it's obvious to user rsvp was sent*/
           $('form').find('#js-name, #js-email, #js-address').val('')
-          $('input[type="checkbox"]').prop('checked', false); // Uncheck checkbox
+          $('input[type="checkbox"]').prop('checked', false) // Uncheck checkbox
+          window.location = ("index.html"); //redirect to home page
       });
    });
 /*
