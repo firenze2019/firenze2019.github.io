@@ -217,6 +217,13 @@ a:hover {
   color: #f2cdc4;
 }
 
+.footer-gallery{
+  text-align: center;
+  height: 30px;
+  background: #7daee9;
+  color: #f2cdc4;
+}
+
 .line {
   border-top: 1px solid #828282;
   width: 100%;
