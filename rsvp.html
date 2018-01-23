@@ -28,6 +28,7 @@
        <h4 class="title">Formal Invitation To Follow</h4>
        <form class="flex column" action="https://formspree.io/tbmbknupfer@gmail.com"
       method="POST" dataType="json">
+           <input type="hidden"  value="RSVP from TBM Wedding" name="_subject" />
 
           <div class="flex">
             <input type="text" id="js-name" class="input-field" placeholder="Name(s) Invited" required name="name"/>
@@ -49,7 +50,7 @@
           <!-- <input type="text" id="js-address" rows="5" cols="10" class="address-field" placeholder="Mailing Address" required name="address"/> -->
          <textarea id="js-address" class="address-field" placeholder="Please enter your mailing address and anything else you would like to mention" name="address"></textarea>
         <!--Formspree-->
-         <input type="hidden"  value="RSVP from TBM Wedding" name="_subject" />
+
          <input type="text" name="_gotcha" style="display:none" />
 
          <button type="submit" value="Send" class="button submitButton">Submit</button>
