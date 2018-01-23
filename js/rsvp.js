@@ -11,7 +11,7 @@ $( document ).ready(function() {
             email: $('#js-email').val(),
             rsvpDecisionMaybe: $('#js-maybeRSVP:checked').val(),
             rsvpDecisionNo: $('#js-noRSVP:checked').val(),
-            address: $('#js-address').val()
+            address: $('#js-address').val(),
             _subject: "RSVP from TBM Wedding"
           },
           dataType: "json"

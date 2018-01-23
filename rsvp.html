@@ -28,7 +28,6 @@
        <h4 class="title">Formal Invitation To Follow</h4>
        <form class="flex column" action="https://formspree.io/tbmbknupfer@gmail.com"
       method="POST" dataType="json">
-           <input type="hidden"  value="RSVP from TBM Wedding" name="_subject" />
 
           <div class="flex">
             <input type="text" id="js-name" class="input-field" placeholder="Name(s) Invited" required name="name"/>
@@ -52,6 +51,10 @@
         <!--Formspree-->
 
          <input type="text" name="_gotcha" style="display:none" />
+
+         <input type="hidden" name="_subject" value="RSVP from TBM Wedding" />
+         <!--CC Thibault to these emails-->
+         <input type="hidden" name="_cc" value="knufire@ymail.com" />
 
          <button type="submit" value="Send" class="button submitButton">Submit</button>
 
