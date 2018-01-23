@@ -12,7 +12,7 @@ $( document ).ready(function() {
             rsvpDecisionMaybe: $('#js-maybeRSVP:checked').val(),
             rsvpDecisionNo: $('#js-noRSVP:checked').val(),
             address: $('#js-address').val()
-            _subject: "TBM Wedding"
+            _subject: "RSVP from TBM Wedding"
           },
           dataType: "json"
 
