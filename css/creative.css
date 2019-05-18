@@ -35,6 +35,26 @@ a:hover {
   text-decoration: none;
 }
 
+a.noLinkStyle {
+  text-decoration: none;
+  color: Black;
+}
+
+a.noLinkStyle:hover {
+  text-decoration: none;
+  color: #7daee9;
+}
+
+a.noLinkStyleLightBlack {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+a.noLinkStyleLightBlack:hover {
+  text-decoration: none;
+  color: #7daee9;
+}
+
 h1,
 h2,
 h3,
